@@ -1,5 +1,8 @@
 @import "./config";
 @import "./colors";
+@import "./menu";
+@import "./header";
+@import "./logo";
 
 * {
   margin: 0;
@@ -12,65 +15,5 @@ body {
   background: rgb(224, 224, 221);
 }
 
-// header bar
-.bar {
-  position: relative;
-  background: #fff;
-  width: 100%;
-  height: 44px;
-  box-shadow: 0 0 4px rgba(0,0,0,.1);
-}
-
-.part {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100%/3));
-  height: 44px;
-}
-
-// menu hamburguer
-
-.hamburguer {
-  display: block;
-  background: #1a1a1a;
-  height: 3px;
-  margin: 21px 0;
-  position: relative;
-  width: 20%;
-  transition: .5s ease-in-out;
-}
-
-.hamburguer::before,
-.hamburguer::after {
-  background: #000000;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: .5s ease-in-out;
-}
-
-.hamburguer::before {
-  top: -7px;
-}
-.hamburguer::after {
-  bottom: -7px;
-}
-
-#menu-check {
-  display: none;
-}
-
-#menu-check:checked ~ label .hamburguer{
-  transform: rotate(45deg);
-  bottom: 0;
-}
-#menu-check:checked ~ label .hamburguer::before{
-  transform: rotate(90deg);
-  top: 0;
-}
-#menu-check:checked ~ label .hamburguer::after{
-  opacity: 0;
-}
 
 
