@@ -10,11 +10,12 @@
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+
     <!-- endbuild -->
   </head>
   <body>
     <header class="main-header">
-      <nav  class="popup-menu">
+      <nav id="menu" class="popup-menu">
         <ul class="pages">
           <li>
             <a href="#">Stories</a>
@@ -49,14 +50,15 @@
         </ul>
       </nav>
 
-
+      <!-- Barra de menu -->
       <div class="bar">
         <div class="container part">
           <div class="menu-actions">
-            <input type="checkbox" id="menu-check">
-            <label for="menu-check">
-                <span class="hamburguer"></span>
-            </label>
+            <a href="#" class="menu">
+              <span class="line top"></span>
+              <span class="line middle"></span>
+              <span class="line bottom"></span>
+            </a>
           </div>
           <div>
             <a href="#"><img class="logo" src="./images/logo.svg" alt="" width="100" height="18" ></a>
@@ -68,6 +70,7 @@
         </div>
       </div>
     </header>
+
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
