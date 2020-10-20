@@ -1,87 +1,76 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+@import "./config";
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Space out content a bit */
 body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  max-width: 100%;
+  background: rgb(224, 224, 221);
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
+// header bar
+.bar {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 44px;
+  box-shadow: 0 0 4px rgba(0,0,0,.1);
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
+.part {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100%/3));
+  height: 44px;
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 3rem;
+// menu hamburguer
+
+.hamburguer {
+  display: block;
+  background: #1a1a1a;
+  height: 3px;
+  margin: 21px 0;
+  position: relative;
+  width: 20%;
+  transition: .5s ease-in-out;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 1.5rem;
-  color: #777;
-  border-top: .05rem solid #e5e5e5;
+.hamburguer::before,
+.hamburguer::after {
+  background: #000000;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: .5s ease-in-out;
 }
 
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
+.hamburguer::before {
+  top: -7px;
 }
-.container-narrow > hr {
-  margin: 2rem 0;
+.hamburguer::after {
+  bottom: -7px;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
+#menu-check {
+  display: none;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
+#menu-check:checked ~ label .hamburguer{
+  transform: rotate(45deg);
+  bottom: 0;
 }
-.marketing p + h4 {
-  margin-top: 1.5rem;
+#menu-check:checked ~ label .hamburguer::before{
+  transform: rotate(90deg);
+  top: 0;
+}
+#menu-check:checked ~ label .hamburguer::after{
+  opacity: 0;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+
