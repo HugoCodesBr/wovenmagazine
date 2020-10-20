@@ -1,0 +1,47 @@
+// Variaveis
+$title:                 2.4rem;
+$subtitle-1:            1.6rem;
+$subtitle-2:            1.2rem;
+$paragraf:              1rem;
+
+$title-mobile:          2rem;
+$subtitle-1-mobile:     1.6rem;
+$subtitle-2-mobile:     1.1rem;
+$paragraf-mobile:       1rem;
+
+// Cores
+$white:         #FFFFFF;
+$whiteHover:    #FFFFFF78;
+$green:         #29AE81;
+$greenDark:     #146E50;
+$marrom:        #A4A4A4;
+$marromDark:    #505050;
+$black:         #000000;
+$blackHover:    #0000009A;
+
+// Media Queries
+$mobileS:   320px;
+$mobileM:   375px;
+$mobileL:   425px;
+$tablet:    768px;
+$desktop:   1024px;
+
+// Mixins de fontes
+@mixin ruda-title {
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $title;
+}
+@mixin ruda-subtitle {
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $subtitle-1;
+}
+@mixin ruda-paragraf {
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $paragraf;
+}
