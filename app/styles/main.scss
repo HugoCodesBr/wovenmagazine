@@ -5,6 +5,7 @@
 @import "./header";
 @import "./logo";
 @import "./navbar";
+@import "./button";
 
 * {
   margin: 0;
@@ -14,7 +15,8 @@
 
 body {
   max-width: 100%;
-  background: rgb(224, 224, 221);
+  background-image: url(../images/01_JDR__banner.jpg  );
+  max-height: 1000px;
 }
 
 
