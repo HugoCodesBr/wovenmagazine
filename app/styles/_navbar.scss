@@ -1,5 +1,6 @@
 @import "./colors";
 @import "./button";
+@import "./fonts";
 
 //cart
 .cart img{
@@ -26,6 +27,10 @@
 
 // navbar
 
+nav {
+  text-align: center;
+}
+
 .popup-menu {
   position: fixed;
   background: #fff;
@@ -37,12 +42,13 @@
     width: 100%;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 70px;
     li a{
       display: block;
       list-style: none;
       text-decoration: none;
-      font-family: "p22-underground", sans-serif;
+      font-style: normal;
+      font-family: "p22_underground_boldregular", sans-serif;
       font-weight: 600;
       color: $low-gray;
       text-transform: uppercase;
