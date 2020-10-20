@@ -1,3 +1,4 @@
+// variavei menu
 const lineTop = document.querySelector('.top');
 const lineMid = document.querySelector('.middle');
 const lineBot = document.querySelector('.bottom');
@@ -5,6 +6,10 @@ const menu = document.querySelector('.menu');
 const menuClose = document.querySelector('.menu-close');
 const popupMenu = document.querySelector('.popup-menu');
 
+// variaveis checkout
+const cartBox = document.querySelector('.cart-container');
+const cart = document.querySelector('.cart');
+const fechar = document.querySelector('.xis');
 
 // Animação botao do menu
 menu.addEventListener('click', function(){
@@ -25,3 +30,16 @@ menu.addEventListener('click', function(){
     menu.classList.add('menu-close');
   }
 });
+
+// Checkou abrir e fechar
+cart.addEventListener('click', function(){
+  if(cartBox.className.indexOf('cart-container-open') != -1){
+    cartBox.classList.remove('cart-container-open')
+  }else {
+    cartBox.classList.add('cart-container-open')
+  }
+});
+
+fechar.addEventListener('click', function(){
+  cartBox.classList.remove('cart-container-open');
+})

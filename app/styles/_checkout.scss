@@ -1,0 +1,90 @@
+@import "./colors";
+
+
+
+.your-cart {
+  position: fixed;
+  width: 100%;
+  height:  124px;
+  display: inline;
+  background: #fff;
+  margin-top: 45px;
+
+}
+
+.cart-box {
+  display: flex;
+  margin-top: 20px;
+  h2 {
+    font-size: 32px;
+    font-family: "minion-pro",serif;
+    text-transform: none;
+  }
+  p {
+    margin-left: 10px;
+    margin-top: 15px;
+    font-family: 'futura-pt',sans-serif;
+    font-weight: 600;
+    color: $low-gray;
+    text-transform: uppercase;
+  }
+  .xis {
+    position: absolute;
+    fill: $low-gray;
+    width: 12px;
+    height: 12px;
+    right: 20px;
+    top: 20px;
+  }
+
+}
+
+.stroke {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 0.1px;
+  background: #e6e6e6;
+}
+
+.checkout {
+  margin-top: 169px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: #1aa170;
+  text-align: center;
+  padding: 23px 0;
+  a {
+    font-size: 14px;
+    font-family: "p22-underground_regular",sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 auto
+  }
+  .arrow {
+    display: inline-block;
+    height: 10px;
+    margin-left: 10px;
+    fill: #fff;
+  }
+}
+
+.cart-container {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+
+.cart-container-open {
+  visibility: visible;
+  opacity: 100%;
+}
+
+
