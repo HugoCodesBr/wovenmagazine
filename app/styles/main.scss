@@ -9,6 +9,7 @@
 @import "./fonts";
 @import "./checkout";
 @import "./search";
+@import "./slides";
 
 * {
   margin: 0;
@@ -18,8 +19,6 @@
 
 body {
   max-width: 100%;
-  background-image: url(../images/01_JDR__banner.jpg);
-  height: 800px;
 }
 
 
