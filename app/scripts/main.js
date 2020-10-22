@@ -18,6 +18,10 @@ const search = document.querySelector('.search');
 // variaveis slide
 const slide = document.querySelector('.slides');
 
+// variaveis  sort by
+const sortby = document.querySelector('.sort-by');
+const accordion = document.querySelector('.accordion');
+
 
 // Animação botao do menu
 menu.addEventListener('click', function(){
@@ -85,6 +89,14 @@ search.addEventListener('click', function(){
   }
 })
 
+// animação accordion
+sortby.addEventListener('click', function(){
+  if(accordion.className.indexOf('see-ul') != -1){
+    accordion.classList.remove('see-ul')
+  }else {
+    accordion.classList.add('see-ul')
+  }
+})
 
 
 

@@ -1,0 +1,137 @@
+.stories {
+  background: #edecec;
+  padding: 50px 0;
+  position: relative;
+}
+
+.stories-box header{
+  margin: 0 0 50px 0;
+  position: relative;
+  display: block;
+  text-align: center;
+  img {
+    margin: 0 0 15px 0;
+    width: 93px;
+    height: 20px;
+  }
+  h1 {
+    font-family: "p22-underground-regular",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}
+
+.filter {
+  display: block;
+  float: none;
+  width: 108%;
+  margin: 0 0 0 -10px;
+  padding: 5px 10px;
+  position: relative;
+  min-width: 230px;
+  z-index: 500;
+  .filter-list-container {
+    position: relative;
+    border-bottom: 1px solid #1a1a1a;
+    display: block;
+    font-family: "p22-underground",sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-transform: uppercase;
+    z-index: 1;
+    border-color: #c8c8c8;
+
+    .sort-by {
+      position: relative;
+      color: #1a1a1a;
+      text-decoration: none;
+      span {
+        float: right;
+        font-size: 20px;
+        font-weight: 400;
+        margin: -3px 0 0 0;
+      }
+    }
+    .collapseable{
+
+      ul{
+        visibility: hidden;
+        position: absolute;
+        margin: 0 auto;
+        background: #D9EDE0;
+        outline: 1px solid #b2b2b2;
+        position: absolute;
+        transform: translateY(100%);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        max-height: 250px;
+        overflow: auto;
+        .link {
+          background: #D9EDE0;
+          list-style: none;
+          margin-top: 10px;
+          margin-left: 10px;
+          letter-spacing: 1px;
+          a {
+            color: #1a1a1a;
+            text-decoration: none;
+            text-transform: uppercase;
+            }
+        }
+      }
+      .see-ul {
+        visibility: visible;
+      }
+
+    }
+
+  }
+}
+
+
+
+
+
+.options {
+  margin: 20px 0 0 0;
+  a {
+    font-family: "p22-underground",sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    border-bottom: 1px solid #c8c8c8;
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 0 10px 10px 10px;
+    color: #1a1a1a;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    .arrow1 {
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #1a1a1a;
+      border-right: 2px solid #1a1a1a;
+      margin: 0 auto;
+      margin-left: -5px;
+      float: right;
+      position: relative;
+      bottom: 10px;
+    }
+    .arrow-right {
+      transform: rotate(45deg);
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: -1px;
+    }
+  }
+}
+
+
+

@@ -8,6 +8,7 @@
   z-index: -3;
   text-align: center;
   transition: opacity 1s 1.5s ease, background .7s, color .7s;
+  clear: both;
 }
 
 .slides-scroll {
@@ -21,6 +22,7 @@
   top: 300px;
   text-align: center;
   width: 100%;
+  clear: both;
   h1 a {
     text-decoration: none;
     font-family: "minion-pro",serif;
