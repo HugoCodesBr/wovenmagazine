@@ -1,0 +1,33 @@
+
+.about-us {
+  padding: 75px 0;
+  .about-us-base {
+    display: block;
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    position: relative;
+    z-index: -1;
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      font-family: "minion-pro",serif;
+      em {
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+    h2 {
+      font-family: "p22-underground-regular",sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      margin: 25px 0 10px 0;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 75px;
+    }
+  }
+}

@@ -28,14 +28,13 @@
 // navbar
 
 nav {
-
   text-align: center;
 }
 
 .popup-menu {
   visibility: hidden;
   position: fixed;
-  background: #fff;
+  background: rgba($color: #fff, $alpha: 0.95);
   width: 100%;
   height: 100%;
   opacity: 0%;
@@ -82,5 +81,5 @@ nav {
 // animação de abrir menu
 .popup-menu-open {
   visibility: visible;
-  opacity: 80%;
+  opacity: 100;
 }

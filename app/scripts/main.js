@@ -15,6 +15,9 @@ const fechar = document.querySelector('.xis');
 const searchBox = document.querySelector('.search-container');
 const search = document.querySelector('.search');
 
+// variaveis slide
+const slide = document.querySelector('.slides');
+
 
 // Animação botao do menu
 menu.addEventListener('click', function(){
@@ -81,6 +84,7 @@ search.addEventListener('click', function(){
     searchBox.classList.add('search-container-open')
   }
 })
+
 
 
 
