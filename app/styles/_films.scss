@@ -1,0 +1,29 @@
+.films {
+  background: #e5e5e5;
+  display: block;
+  header {
+    padding: 20px 0 18px 0;
+    text-align: center;
+  }
+  header h1 {
+    font-family: "p22-underground",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .film-video {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    padding-top: 53.125%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
