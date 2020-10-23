@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1024px) {
+
+  .bar .container {
+    max-width: 1120px;
+  }
+
+  .logo {
+    margin: 0 auto;
+    margin-top: 14px;
+    display: block;
+
+  }
+
+  .your-cart {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    position: fixed;
+    right: 0;
+    top: -1px;
+    width: 400px;
+    z-index: 10;
+  }
+
+  .checkout {
+    position: fixed;
+    right: 0;
+    top: -1px;
+    width: 400px;
+    z-index: 10;
+  }
+
+  .search-container form{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+  }
+
+}
