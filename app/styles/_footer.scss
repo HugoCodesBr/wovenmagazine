@@ -1,0 +1,45 @@
+.main-footer {
+  background: #E5E5E5;
+  padding: 50px 0 50px 0;
+  position: relative;
+  z-index: 10;
+  .container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+  }
+  .col {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    border-bottom: 1px solid #c8c8c8;
+    display: block;
+    float: none;
+    margin: 0 0 10px 0;
+    width: 100%;
+    a {
+      color: #1a1a1a;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+      font-family: "p22-underground",sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      margin: 0 0 8px 0;
+    }
+    p.copyright {
+      font-family: "minion-pro",serif;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+  .col:last-child {
+    border: none;
+    margin: 45px 0 0 0;
+  }
+}
+
