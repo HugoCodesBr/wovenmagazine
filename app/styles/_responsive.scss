@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1024px) {
 
   .bar .container {
-    max-width: 1120px;
+    max-width: 1000px;
   }
 
   .logo {
@@ -36,4 +36,31 @@
 
   }
 
+  .col-1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .col-2 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .stories .article {
+    margin-top: 0;
+    margin: 0;
+  }
+
+  .stories .more a {
+    padding-top: 45px;
+  }
+
+  .col-odd {
+    width: 25% !important;
+  }
+  .col-even {
+    width: 25% !important;
+  }
 }
