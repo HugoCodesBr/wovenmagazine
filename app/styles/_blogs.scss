@@ -1,0 +1,56 @@
+.blogs {
+  background: #F5F5F5;
+  text-align: center;
+  padding: 50px 0;
+   .line {
+      background: none;
+      border: none;
+      border-top: 1px solid #D9D9D9 !important;
+      margin: 0 auto;
+      width: 50%;
+    }
+    header {
+      margin: 25px 0 35px 0;
+    }
+    header h1 {
+      font-family: "p22-underground-regular",sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .blog {
+      float: left;
+      display: block;
+      width: 50%;
+      text-align: left;
+      padding: 0 1%;
+      vertical-align: top;
+      .cover {
+        display: block;
+        height: auto;
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+    }
+    .more {
+      font-family: "p22-underground",sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin: 35px 0 25px 0;
+      text-transform: uppercase;
+      a {
+        color: #5BB48B;
+        text-decoration: none;
+      }
+    }
+}
+
+.group {
+  zoom: 1;
+}
+
+figure {
+  display: block;
+}
